@@ -1,13 +1,13 @@
 mixin monitorStatus(status)
   case status
     when 2
-      .icon.icon-status.up(title="Operational")
+      .icon.icon-status.up(title="正常")
     when 8
-      .icon.icon-status.seem-down(title="Seems down")
+      .icon.icon-status.seem-down(title="好像当机了")
     when 9
-      .icon.icon-status.down(title="Down")
+      .icon.icon-status.down(title="宕机")
     default
-      .icon.icon-status.pause(title="Paused")
+      .icon.icon-status.pause(title="暂停监控")
 
 mixin uptime(uptime)
   .icon-uptime(
@@ -37,12 +37,12 @@ html
               div(style="letter-spacing:-0.5px;")
                 if (data.sum.down > 0)
                   if (data.sum.down == 1)
-                    .summary-detail= data.sum.down + " system is down."
+                    .summary-detail= data.sum.down + " 服务宕机。"
                   else
-                    .summary-detail= data.sum.down + " systems are down."
+                    .summary-detail= data.sum.down + " 服务宕机。"
                 else
-                  .summary-detail="All systems are operational."
-                .summary-checktime="Last check at " + data.sum.checktime
+                  .summary-detail="所有服务运行正常。"
+                .summary-checktime="更新于 " + data.sum.checktime
 
       section.content
         .container
@@ -64,7 +64,7 @@ html
                       .monitor-content
                         .monitor-uptime-range
                           strong=monitor.totalUptime+ "% "
-                          span="uptime for the last " + monitor.uptime.length + " days."
+                          span="更新于最近 " + monitor.uptime.length + " 天"
                         .monitor-uptimes
                           each uptime in monitor.uptime
                             +uptime(uptime)
