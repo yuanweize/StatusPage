@@ -2,7 +2,7 @@ version: "3"
 
 services:
   uptimerobot-page:
-    image: giuem/uptimerobot-page
+    image: nangle/status-page
     # build: .
     environment: 
       - PORT=3000
