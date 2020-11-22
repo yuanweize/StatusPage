@@ -10,8 +10,8 @@ services:
       - CRON_TIME=*/1 * * * *
       - UPTIME_ROBOT_API=
       - UPTIME_ROBOT_NAME_PATTERN=%group/%name
-      - WEBSITE_TITLE=
-      - WEBSITE_COPYRIGHT=
+      - WEBSITE_TITLE=服务状态
+      - WEBSITE_COPYRIGHT=楠格
     # To use config file for more flexible configure,
     # please uncomment next block
     # volumes: 
