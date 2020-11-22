@@ -2,7 +2,7 @@
 app:
   port: 3000
   log_level: debug
-  crontime: "*/5 * * * *"
+  crontime: "*/1 * * * *"
 
 uptimerobot:
   api_key:
