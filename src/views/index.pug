@@ -3,7 +3,7 @@ mixin monitorStatus(status)
     when 2
       .icon.icon-status.up(title="正常")
     when 8
-      .icon.icon-status.seem-down(title="有过宕机")
+      .icon.icon-status.seem-down(title="有故障")
     when 9
       .icon.icon-status.down(title="宕机")
     default
@@ -71,7 +71,7 @@ html
                         +monitorStatus(monitor.status)
                       .monitor-content
                         .monitor-uptime-range
-                          span="最近 " + monitor.uptime.length + " 天"+"可用率"
+                          span="最近 " + monitor.uptime.length + " 天"+"可用率 "
                           strong=monitor.totalUptime+ "% "
                         .monitor-uptimes
                           each uptime in monitor.uptime
