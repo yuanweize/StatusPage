@@ -4,7 +4,7 @@ import { logger } from "../lib/logger";
 import { Parser } from "../lib/parser";
 import { format, addDays, addSeconds, startOfDay } from "date-fns";
 
-const distance = 45;
+const distance = 60;
 
 function lastDays(distance) {
   const now = startOfDay(new Date());
