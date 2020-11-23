@@ -1,4 +1,4 @@
-# UptimeRobot Page
+# UptimeRobot Page 中文版
 
 > Another status page based on [UptimeRobot](https://uptimerobot.com/)
 
