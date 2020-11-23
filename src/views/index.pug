@@ -11,7 +11,7 @@ mixin monitorStatus(status)
 
 mixin uptime(uptime)
   .icon-uptime(
-    class=(uptime.uptime==0?"无数据":uptime.uptime<95?"宕机":uptime.uptime<100?"有过宕机":"正常"),
+    class=(uptime.uptime==0?"pause":uptime.uptime<95?"down":uptime.uptime<100?"seem-down":"up"),
     title="<small>" + uptime.date + "<br>" + uptime.uptime+ "%</small>"
   )
 
