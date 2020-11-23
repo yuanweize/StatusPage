@@ -45,9 +45,9 @@ html
               div(style="letter-spacing:-0.5px;")
                 if (data.sum.down > 0)
                   if (data.sum.down == 1)
-                    .summary-detail= data.sum.down + " 个服务宕机。"
+                    .summary-detail= data.sum.down + " 个服务宕机！"
                   else
-                    .summary-detail= data.sum.down + " 个服务宕机。"
+                    .summary-detail= data.sum.down + " 个服务宕机！"
                 else
                   .summary-detail="所有服务运行正常。"
                 .summary-checktime="最后更新于 " + data.sum.checktime
