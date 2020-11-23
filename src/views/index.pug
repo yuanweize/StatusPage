@@ -85,7 +85,7 @@ html
           .footer-content
             nav.links
               for link in config.links
-                a(href=link.href)=link.name
+                a(href=link.href, target="_blank")=link.name
             .copyright!="&copy; " + config.copyright
 
       script(src="https://cdn.jsdelivr.net/npm/tippy.js@2.2.0/dist/tippy.all.min.js")
