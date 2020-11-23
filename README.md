@@ -2,7 +2,7 @@
 
 > Another status page based on [UptimeRobot](https://uptimerobot.com/)
 
-[![Docker Build Status](https://img.shields.io/docker/build/nangle/status-page.svg?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
+[![Docker Build Status](https://img.shields.io/docker/build/giuem/uptimerobot-page.svg?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
 [![Codecov](https://img.shields.io/codecov/c/github/XOS/StatusPage.svg?style=flat-square)](https://codecov.io/gh/XOS/StatusPage)
 [![license](https://img.shields.io/github/license/XOS/StatusPage.svg?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square)](https://renovateapp.com/)
