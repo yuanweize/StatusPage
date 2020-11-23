@@ -12,7 +12,7 @@ mixin monitorStatus(status)
 mixin uptime(uptime)
   .icon-uptime(
     class=(uptime.uptime==0?"pause":uptime.uptime<95?"down":uptime.uptime<100?"seem-down":"up"),
-    title="<small>" + uptime.date + "<br>" + uptime.uptime+ "%</small>"
+    title="<small>" + uptime.date + "<br>" + "可用率 " + uptime.uptime+ "%</small>"
   )
 
 
