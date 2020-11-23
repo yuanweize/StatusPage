@@ -3,15 +3,15 @@ mixin monitorStatus(status)
     when 2
       .icon.icon-status.up(title="正常")
     when 8
-      .icon.icon-status.seem-down(title="好像当机了")
+      .icon.icon-status.seem-down(title="有过宕机")
     when 9
       .icon.icon-status.down(title="宕机")
     default
-      .icon.icon-status.pause(title="暂停监控")
+      .icon.icon-status.pause(title="无数据")
 
 mixin uptime(uptime)
   .icon-uptime(
-    class=(uptime.uptime==0?"pause":uptime.uptime<95?"down":uptime.uptime<100?"seem-down":"up"),
+    class=(uptime.uptime==0?"无数据":uptime.uptime<95?"宕机":uptime.uptime<100?"有过宕机":"正常"),
     title="<small>" + uptime.date + "<br>" + uptime.uptime+ "%</small>"
   )
 
@@ -42,7 +42,7 @@ html
                     .summary-detail= data.sum.down + " 服务宕机。"
                 else
                   .summary-detail="所有服务运行正常。"
-                .summary-checktime="更新于 " + data.sum.checktime
+                .summary-checktime="最后更新于 " + data.sum.checktime
 
       section.content
         .container
@@ -63,8 +63,8 @@ html
                         +monitorStatus(monitor.status)
                       .monitor-content
                         .monitor-uptime-range
+                          span="最近 " + monitor.uptime.length + " 天"+"可用率"
                           strong=monitor.totalUptime+ "% "
-                          span="更新于最近 " + monitor.uptime.length + " 天"
                         .monitor-uptimes
                           each uptime in monitor.uptime
                             +uptime(uptime)
