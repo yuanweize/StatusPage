@@ -11,21 +11,7 @@ function lastDays(distance) {
   const dates = [];
   const ranges = [];
   const getTime = date => Math.floor(date.getTime() / 1000);
-/*  
-  for (let d = 0; d < days; d++) {
-    dates.push(today.subtract(d, 'day'));
-  }
-  
-  
-  for (let i = 0;  i < distance; i--) {
-    const day0 = addDays(now, i);
-    const day1 = addSeconds(addDays(day0, 1), -1);
-    dates.push(format(day0, "YYYY年MM月DD日"));
-    ranges.push(`${getTime(day0)}_${getTime(day1)}`);
-  }
-  return { dates, ranges: ranges.join("-") };
-}
-*/  
+
   for (let i = distance; i > 0; i--) {
     const day0 = addDays(now, i);
     const day1 = addSeconds(addDays(day0, 1), -1);
