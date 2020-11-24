@@ -8,11 +8,11 @@
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg?style=flat-square)](https://renovateapp.com/)
 
 ## 修改说明
-> 前端改为中文显示；
-> 改变页面显示宽度；
-> 修改显示数据为最近 60 天（原版 45 天）；
-> 增加显示当前日期数据（原版只显示到昨天）；
-> 其它布局微调
+* 前端改为中文显示；
+* 改变页面显示宽度；
+* 修改显示数据为最近 60 天（原版 45 天）；
+* 增加显示当前日期数据（原版只显示到昨天）；
+* 其它布局微调
 
 ## 效果展示
 
