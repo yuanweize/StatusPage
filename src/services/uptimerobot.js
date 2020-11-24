@@ -11,7 +11,8 @@ function lastDays(distance) {
   const dates = [];
   const ranges = [];
   const getTime = date => Math.floor(date.getTime() / 1000);
-  for (let i = -distance; i = 0; i++) {
+  
+  for (let i = 0;  i < distance; i++) {
     const day0 = addDays(now, i);
     const day1 = addSeconds(addDays(day0, 1), -1);
     dates.push(format(day0, "YYYY年MM月DD日"));
