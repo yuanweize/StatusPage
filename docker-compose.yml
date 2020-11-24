@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  uptimerobot-page:
+  status-page:
     image: nangle/status-page
     # build: .
     environment: 

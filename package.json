@@ -1,10 +1,10 @@
 {
-  "name": "uptimerobot-page",
-  "description": "Another status page based on UptimeRobot",
+  "name": "status-page",
+  "description": "Another status page based on UptimeRobot 中文版",
   "version": "0.1.0",
   "main": "build/bootstrap/app.js",
-  "repository": "https://github.com/giuem/uptimerobot-page.git",
-  "author": "giuem <giuemcom@gmail.com>",
+  "repository": "https://github.com/XOS/StatusPage.git",
+  "author": "佩佩 <admin@nange.cn>",
   "license": "GPL-3.0",
   "scripts": {
     "start": "node build/bootstrap",
@@ -16,9 +16,9 @@
     "test": "NODE_ENV=test nyc ava",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
-  "homepage": "https://github.com/giuem/uptimerobot-page",
+  "homepage": "https://github.com/XOS/StatusPage",
   "bugs": {
-    "url": "https://github.com/giuem/uptimerobot-page/issues"
+    "url": "https://github.com/XOS/StatusPage/issues"
   },
   "engines": {
     "node": ">=10"
