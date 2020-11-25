@@ -17,7 +17,7 @@
 
 ## 效果展示
 
-![](https://cdn.jsdelivr.net/gh/XOS/StatusPage@master/status.nange.cn_.png)
+![](https://cdn.jsdelivr.net/gh/XOS/StatusPage@master/status.nange.cn.png)
 
 
 ## Requirements
