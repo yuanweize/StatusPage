@@ -1,6 +1,6 @@
 # UptimeRobot Page 中文版
 
-> Another status page based on [UptimeRobot](https://uptimerobot.com/)
+> 一款基于 [UptimeRobot](https://uptimerobot.com/) 中文状态监测页
 
 [![Docker Build Status](https://img.shields.io/docker/build/giuem/uptimerobot-page.svg?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
 [![license](https://img.shields.io/github/license/XOS/StatusPage.svg?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
@@ -17,6 +17,17 @@
 
 ![](https://cdn.jsdelivr.net/gh/XOS/StatusPage@master/status.nange.cn.png)
 
+## 非 Docker 环境下使用
+```bash
+git clone https://github.com/XOS/StatusPage.git && cd StatusPage
+npm i
+yarn install && yarn cache clean
+yarn build
+```
+修改 config/default.yml
+```bash
+node build/bootstrap
+```
 
 ## Requirements
 
@@ -24,7 +35,7 @@
 * Uptime Robot API key
 * Docker and docker-compose (optional)
 
-## Deploy
+## Docker 环境下使用
 
 ```bash
 wget https://raw.githubusercontent.com/XOS/StatusPage/master/docker-compose.yml
