@@ -17,7 +17,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/XOS/StatusPage@master/status.nange.cn.png)
 
-## 非 Docker 环境下使用
+## 常规环境下部署使用
 ```bash
 git clone https://github.com/XOS/StatusPage.git && cd StatusPage
 npm i
@@ -35,7 +35,7 @@ node build/bootstrap
 * Uptime Robot API key
 * Docker and docker-compose (optional)
 
-## Docker 环境下使用
+## Docker 环境下部署使用
 
 ```bash
 wget https://raw.githubusercontent.com/XOS/StatusPage/master/docker-compose.yml
