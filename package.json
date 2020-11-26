@@ -1,7 +1,7 @@
 {
-  "name": "status-page",
-  "description": "Another status page based on UptimeRobot 中文版",
-  "version": "0.1.0",
+  "name": "StatusPpage",
+  "description": "一款基于 UptimeRobot 中文状态监测页",
+  "version": "0.2.0",
   "main": "build/bootstrap/app.js",
   "repository": "https://github.com/XOS/StatusPage.git",
   "author": "佩佩 <admin@nange.cn>",
