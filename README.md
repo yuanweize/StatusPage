@@ -24,7 +24,7 @@ npm i
 yarn install && yarn cache clean
 yarn build
 ```
-修改 config/default.yml
+修改 config/default.yml，然后
 ```bash
 node build/bootstrap
 ```
