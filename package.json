@@ -16,6 +16,9 @@
     "test": "NODE_ENV=test nyc ava",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
   "homepage": "https://github.com/XOS/StatusPage",
   "bugs": {
     "url": "https://github.com/XOS/StatusPage/issues"
