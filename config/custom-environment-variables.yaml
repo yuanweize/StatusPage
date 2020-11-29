@@ -13,10 +13,10 @@ uptimerobot:
 website:
   title: WEBSITE_TITLE
   copyright: WEBSITE_COPYRIGHT
-  links:
-    - name: 主页
-      href: https://nan.ge
-    - name: 楠格
-      href: https://www.nange.cn
-    - name: GitHub
-      href: https://github.com/xos
+  #links:
+  #  - name: 主页
+   #   href: https://nan.ge
+   # - name: 楠格
+   #   href: https://www.nange.cn
+   # - name: GitHub
+   #   href: https://github.com/xos
