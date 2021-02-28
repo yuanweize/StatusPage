@@ -2,8 +2,10 @@
 
 > 一款基于 [UptimeRobot](https://uptimerobot.com/) 中文状态监测页
 
-[![Docker Build Status](https://img.shields.io/docker/build/giuem/uptimerobot-page.svg?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
-[![license](https://img.shields.io/github/license/XOS/StatusPage.svg?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/nangle/status-page?style=flat-square)](https://hub.docker.com/r/nangle/status-page/)
+[![GitHub](https://img.shields.io/github/license/xos/StatusPage?style=flat-square)](https://github.com/XOS/StatusPage/blob/master/LICENSE)
+
+
 
 ## 修改说明
 * 前端改为中文显示；
@@ -41,6 +43,25 @@ node build/bootstrap
 wget https://raw.githubusercontent.com/XOS/StatusPage/master/docker-compose.yml
 docker-compose up -d
 ```
+
+## 节点命名格式
+如：组名/索引序号/真实节点名（就是要显示的节点名），索引序列号建议用三位数字表示，前前一位数字表示组的序号，最后两位数字表示组内节点的序号。如：
+境内节点/000/北京，
+境内节点/001/上海，
+境外节点/100/洛杉矶，
+境外节点/101/香港
+
+## Docker 环境下部署时自定义主页页脚信息
+* 取消注释 docker-compose.yml 第 17 和 18 行：
+
+```bash
+    # volumes: 
+    #   - ./config:/app/config
+```
+
+* 下载项目中的config文件夹，修改 default.yml 相关配置。
+* docker 环境时自定义配置文件加载有优先级，如：custom-environment-variables.yaml>production.yml>default.yml。
+* 注意，docker-compose.yml 和 config 文件夹要在同一目录下。
 
 ## Configure
 
